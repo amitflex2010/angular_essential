@@ -1,0 +1,50 @@
+#container
+{
+    margin:5px;
+    display: inline-block;
+    float:right;
+    margin-right: 15px;
+    border: 1px black solid;
+    background: #ffffff;
+    width:30%;
+    max-width: 299px;
+}
+#container #img-logo
+{
+   
+}
+#in-container span
+{
+    width: 80%;
+    color:#ffcfcf;
+    font-size:30px;
+    font-weight: bold;
+    margin-left:20px;
+   
+    
+}
+
+span.medium-movies {
+  color: #53ace4;
+}
+span.medium-series {
+  color: #45bf94;
+}
+ #in-container
+{
+    
+     margin-left: 20px;
+     margin-top:20px; 
+     width: 70%;
+}
+
+#in-container p
+{
+    
+    color:#ffcfcf;
+    width:138%;
+    margin: 10px;
+  
+   
+    
+}

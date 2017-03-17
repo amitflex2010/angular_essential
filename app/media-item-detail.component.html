@@ -1,0 +1,22 @@
+<div style=" width=100%;">
+<div id="container" *ngIf="mediaItems" >
+
+        
+        <img id="img-logo" src="media/Walking_Tall_(2004_film).jpg"/>
+       
+</div>
+       <div id="in-container" >
+           <span ><h2>{{mediaItems.name}}</h2></span>
+            <p><strong>Genre: </strong>{{mediaItems.medium}}</p>
+        <p><strong>Category: </strong>{{mediaItems.category}}</p>
+        <p><strong>Year: </strong>{{mediaItems.year}}</p>
+        <p><strong>WatchedOn: </strong>{{mediaItems.watchedOn}}</p>
+        <div style="margin-left:5px; margin-top:30px; width:48px;"><p><strong>Favorite: </strong></p><img style="margin-left:78px; margin-top:-45px; width:48px;" title="favorite" *ngIf="mediaItems.isFavorite" (click)="setFavorite()" src="media/heart2.png"/>
+        <img style="margin-left:78px; margin-top:-45px; width:48px;" title="not-favorite" *ngIf="!mediaItems.isFavorite" (click)="setFavorite()" src="media/heart1.png"/></div>
+        
+       <p><strong>UserRating: </strong><rating [(ngModel)]="mediaItems.rating" [readonly]="true"></rating></p>
+        
+        <p><strong>Synopsis: </strong>{{mediaItems.synopsis}}</p>
+       </div>
+</div>
+    
